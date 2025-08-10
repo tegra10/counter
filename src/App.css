@@ -1,0 +1,41 @@
+/* Palette officielle */
+:root {
+  --bg: #282c34;
+  --text: #ffffff;
+  --accent: #61dafb;
+}
+
+/* Reset rapide */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  background-color: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--text);
+}
+
+.App-header button {
+  background: var(--accent);
+  color: var(--bg);
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: transform 0.2s;
+}
+
+.App-header button:hover {
+  transform: scale(1.05);
+}
